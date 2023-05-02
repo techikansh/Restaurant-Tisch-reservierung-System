@@ -1,8 +1,10 @@
 <script setup></script>
 <template>
-  <div class="row pb-5" >
+  <div class="row pb-5" id="content1">
     <div class="col-lg-12 text-center" id = "menu-font">
+      <hr id = "menu-hr-up">
       <h1>Menu</h1>
+      <hr id = "menu-hr-down">
     </div>
   </div>
 
@@ -44,7 +46,7 @@
     </div>
     <div class="col-sm-2 col-md-4 col-lg-3 mt-5" id="item">
       <div id="front">
-        <img src="../assets/spoon.jpg" alt="items" id="itemImg" />
+        <img src="../assets/pasta.png" alt="items" id="itemImg" />
       </div>
       <div id="back">
         <div class="text-center" id="itemText">
@@ -54,31 +56,31 @@
     </div>
     <div class="col-sm-2 col-md-4 col-lg-3 mt-5" id="item">
       <div id="front">
-        <img src="../assets/spoon.jpg" alt="items" id="itemImg" />
+        <img src="../assets/burger.png" alt="items" id="itemImg" />
       </div>
       <div id="back">
         <div class="text-center" id="itemText">
-          <h3>Risotto</h3>
+          <h3>Burger</h3>
         </div>
       </div>
     </div>
     <div class="col-sm-2 col-md-4 col-lg-3 mt-5" id="item">
       <div id="front">
-        <img src="../assets/spoon.jpg" alt="items" id="itemImg" />
+        <img src="../assets/dessert.png" alt="items" id="itemImg" />
       </div>
       <div id="back">
         <div class="text-center" id="itemText">
-          <h3>Antipasti</h3>
+          <h3>Dessert</h3>
         </div>
       </div>
     </div>
     <div class="col-sm-2 col-md-4 col-lg-3 mt-5" id="item">
       <div id="front">
-        <img src="../assets/spoon.jpg" alt="items" id="itemImg" />
+        <img src="../assets/cocktail.png" alt="items" id="itemImg" />
       </div>
       <div id="back">
         <div class="text-center" id="itemText">
-          <h3>Salat</h3>
+          <h3>cocktail</h3>
         </div>
       </div>
     </div>
@@ -153,6 +155,17 @@
     font-family: 'BoucherieCursive', cursive;
     color : #F8B333;
   }
+
+#menu-hr-up{
+  
+  border-top: 2px solid;
+  
+  /* border: none; */
+}
+
+#menu-hr-down{
+  border-top : 2px solid;
+}
 
 
 </style>

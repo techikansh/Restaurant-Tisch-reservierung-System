@@ -5,11 +5,18 @@ function test() {
   bgVideo.style.display = 'none'
   console.log(bgVideo)
 }
+
+function scrollToContent(){
+  var contentElement = document.getElementById("content1");
+  contentElement.scrollIntoView({behavior : "smooth"});
+}
+
 </script>
 <template>
   <div class="d-flex flex-column text-center justify-content-between" id="videoContent">
     <div class="">
       <img src="../assets/golden_spoon.jpg" id="logoWrapper" height="236" width="229" alt="" />
+      
       <div class="mt-5" id="reserve">
         <router-link class="nav-link" id="reserveBtn" :to="{ name: 'reservieren' }"
           >jetzt reservieren</router-link
@@ -18,7 +25,7 @@ function test() {
     </div>
 
     <div class="mb-4" id="scroll">
-      <span id="scroll_link">
+      <span id="scroll_link" >
         Esplorare
         <img src="../assets/icons/arrow_down.png" class="mt-3" id="arrow" alt="" />
       </span>
@@ -52,6 +59,7 @@ function test() {
   opacity: 0.8;
 }
 #reserveBtn:hover {
+  font-weight: 200;
   background-color: #fff;
   color: #F8B333;
   opacity: 1;
@@ -74,3 +82,12 @@ function test() {
   width: 25px;
 }
 </style>
+
+<script>
+
+  function scrollToContent(){
+  var contentElement = document.getElementById("menu-font");
+  contentElement.scrollIntoView({behavior : "smooth"});
+}
+
+</script>
