@@ -40,7 +40,7 @@ video {
   height: 100vh;
   width: 100%;
   object-fit: fill;
-  filter : contrast(200%);
+  filter : contrast(300%);
   filter : blur(8px);
   animation: 1.2s ease-out 0s 1 slideUp;
 }

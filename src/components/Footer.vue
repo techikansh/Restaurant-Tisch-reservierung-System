@@ -46,7 +46,7 @@
 
 .footer-basic {
   padding: 40px 0;
-  background-color: #ffffff;
+  background-color: #000;
   color: #4b4c4d;
 }
 
@@ -149,4 +149,9 @@
   border-radius: 50%; /* make the icon circular */
 
 }
+
+.footer-basic .list-inline{
+  color: #fff;
+}
+
 </style>

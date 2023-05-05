@@ -15,7 +15,7 @@ function scrollToContent(){
 <template>
   <div class="d-flex flex-column text-center justify-content-between" id="videoContent">
     <div class="">
-      <img src="../assets/golden_spoon.jpg" id="logoWrapper" height="236" width="229" alt="" />
+      <img src="../assets/OliveWood.png" id="logoWrapper" height="236" width="229" alt="" />
       
       <div class="mt-5" id="reserve">
         <router-link class="nav-link" id="reserveBtn" :to="{ name: 'reservieren' }"
