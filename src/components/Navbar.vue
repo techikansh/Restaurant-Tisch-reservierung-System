@@ -62,8 +62,8 @@ header .logo {
   position: absolute;
   top:10%;
   left: 3%;
-  width: 600px;
-  height : 600px;
+  width: 300px;
+  height : 300px;
   object-fit: cover;
   transform: translate(-10%, -30%);
 }
@@ -78,31 +78,31 @@ header li .nav-link-home{
   font-size : 25px;
   font-family: 'BoucherieCursive', bold, cursive;
   position: absolute;
-  top: 100%;
-  right: 14.8%;
-  transform: translate(50%, 195%);
+  top: 140%;
+  right: 10%;
+  /* transform: translate(50%, 195%); */
   /* float : right; */
 }
 
 header li .nav-link-uns{
   color: #F8B333;
   position: absolute;
-  top: 100%;
-  right: 18.5%;
+  top: 140%;
+  right: 14%;
   font-family: 'BoucherieCursive', bold, cursive;
   font-size : 25px;
-  transform: translate(40%, 195%);
+  /* transform: translate(40%, 195%); */
   /* float : right; */
 }
 
 header li .nav-link-contact{
   color: #F8B333;
   position: absolute;
-  top: 100%;
-  right: 22.5%;
+  top: 140%;
+  right: 20%;
   font-family: 'BoucherieCursive', bold, cursive;
   font-size : 25px;
-  transform: translate(30%, 195%);
+  /* transform: translate(30%, 195%); */
   /* float : right; */
 }
 
