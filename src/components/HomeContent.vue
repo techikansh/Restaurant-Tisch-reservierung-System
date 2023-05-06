@@ -15,12 +15,15 @@ function scrollToContent(){
 <template>
   <div class="d-flex flex-column text-center justify-content-between" id="videoContent">
     <div class="">
-      <img src="../assets/OliveWood.png" id="logoWrapper" height="236" width="229" alt="" />
+      <!-- <img src="../assets/OliveWood.png" id="logoWrapper" height="236" width="229" alt="" /> -->
       
+      <div class = "reserve-you-table" id = "r-y-t">
+        <!-- <p>Reserve you Table</p> -->
+      </div>
+
       <div class="mt-5" id="reserve">
         <router-link class="nav-link" id="reserveBtn" :to="{ name: 'reservieren' }"
-          >jetzt reservieren</router-link
-        >
+          >Reserve Now!</router-link>
       </div>
     </div>
 
@@ -33,6 +36,15 @@ function scrollToContent(){
   </div>
 </template>
 <style scoped>
+
+#r-y-t{
+  color : #F8B333;
+  font-size: 90px;
+  font-family: 'Chalkduster', bold;
+  transform: translate(0%, 435%);
+
+}
+
 #videoContent {
   min-height: calc(100vh - 150px);
   padding-top: 15rem;
@@ -41,15 +53,17 @@ function scrollToContent(){
   /* margin: 20vh 0 0 35px; */
   border-radius: 50% 50%;
 }
-/* #reserve {
-  margin-bottom: 20vh;
-} */
+
+
 #reserveBtn {
+  transform: translate(0%, 1035%);
   color: #fff;
   display: inline-block;
-  font-size: 25px;
-  font-weight: 700;
-  font-family: 'trade_gothic_bdcn20', 'Roboto', Helvetica Neue, Helvetica, Arial, sans-serif;
+  /* display : flex; */
+  align-items: center;
+  font-size: 31px;
+  font-weight: 2000;
+  font-family: 'BoucherieCursive', cursive;
   line-height: 46px;
   letter-spacing: calc(100px / 100);
   border: 2px solid #fff;

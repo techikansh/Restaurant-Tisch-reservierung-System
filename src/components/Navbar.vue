@@ -3,8 +3,8 @@
   <nav class="navbar sticky-top navbar-expand-md navbar-light">
     <div class="container">
       <a class="navbar-brand me-5" href="#"
-        ><img alt="Vue logo" class="logo" src="../assets/logo.svg" width="100" height="100"
-      /></a>
+        ><img alt="Vue logo" class="logo" src="../assets/oliveWood3.png"/>
+      </a>
       <button
         class="navbar-toggler"
         type="button"
@@ -25,16 +25,16 @@
 
         <ul class="navbar-nav me-auto my-2 my-lg-0" style="background-color: ; text-align: center">
           <li class="nav-item me-4">
-            <router-link class="nav-link" id="links" :to="{ name: 'home' }">HOME</router-link>
+            <router-link class="nav-link-home" id="links" :to="{ name: 'home' }">Home</router-link>
           </li>
           <li class="nav-item me-4">
-            <router-link class="nav-link" id="links" :to="{ name: 'ueber-uns' }"
-              >ÜBER UNS</router-link
+            <router-link class="nav-link-uns" id="links" :to="{ name: 'ueber-uns' }"
+              >About Us</router-link
             >
           </li>
 
           <li class="nav-item me-4">
-            <router-link class="nav-link" id="links" :to="{ name: 'kontakt' }">KONTAKT</router-link>
+            <router-link class="nav-link-contact" id="links" :to="{ name: 'kontakt' }">Contact</router-link>
           </li>
         </ul>
       </div>
@@ -55,19 +55,55 @@
 
 header{
   position : relative;
+  overflow: hidden;
 }
 
-header img {
+header .logo {
   position: absolute;
-  top: 8%;
-  left: 5%;
+  top:10%;
+  left: 3%;
+  width: 600px;
+  height : 600px;
+  object-fit: cover;
+  transform: translate(-10%, -30%);
 }
 
-header li {
-  /* position: absolute;
-  top: 8%;
-  right: 5%; */
-  float : right;
+
+
+
+
+
+header li .nav-link-home{
+  color: #F8B333;
+  font-size : 25px;
+  font-family: 'BoucherieCursive', bold, cursive;
+  position: absolute;
+  top: 100%;
+  right: 14.8%;
+  transform: translate(50%, 195%);
+  /* float : right; */
+}
+
+header li .nav-link-uns{
+  color: #F8B333;
+  position: absolute;
+  top: 100%;
+  right: 18.5%;
+  font-family: 'BoucherieCursive', bold, cursive;
+  font-size : 25px;
+  transform: translate(40%, 195%);
+  /* float : right; */
+}
+
+header li .nav-link-contact{
+  color: #F8B333;
+  position: absolute;
+  top: 100%;
+  right: 22.5%;
+  font-family: 'BoucherieCursive', bold, cursive;
+  font-size : 25px;
+  transform: translate(30%, 195%);
+  /* float : right; */
 }
 
 </style>
