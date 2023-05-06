@@ -61,9 +61,9 @@ function scrollToContent(){
   display: inline-block;
   /* display : flex; */
   align-items: center;
-  font-size: 31px;
+  font-size: 33px;
   font-weight: 2000;
-  font-family: 'BoucherieCursive', cursive;
+  font-family: 'BoucherieCursive', Bold, cursive;
   line-height: 46px;
   letter-spacing: calc(100px / 100);
   border: 2px solid #fff;
