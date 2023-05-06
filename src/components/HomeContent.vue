@@ -15,7 +15,7 @@ function scrollToContent(){
 <template>
   <div class="d-flex flex-column text-center justify-content-between" id="videoContent">
     <div class="">
-      <!-- <img src="../assets/OliveWood.png" id="logoWrapper" height="236" width="229" alt="" /> -->
+      <img src="../assets/OliveWood.png" id="logoWrapper" height="236" width="229" alt="" />
       
       <div class = "reserve-you-table" id = "r-y-t">
         <!-- <p>Reserve you Table</p> -->
@@ -56,7 +56,7 @@ function scrollToContent(){
 
 
 #reserveBtn {
-  transform: translate(0%, 1035%);
+  /* transform: translate(0%, 1035%); */
   color: #fff;
   display: inline-block;
   /* display : flex; */
