@@ -5,6 +5,7 @@
   <video autoplay muted loop id="bgVideo">
 
     <source src="../assets/bg_video.mp4" type="video/mp4" />
+    <!-- <source src="../assets/dining.mp4" type="video/mp4" /> -->
     
     Your browser does not support HTML5 video.
   </video>
@@ -12,12 +13,12 @@
 
   <!-- written by dev for background image -->
 
-  <div class="bg-image">
+  <!-- <div class="bg-image">
     <p>
-      <!-- This is a paragraph of text. -->
+      
 
     </p>
-  </div>
+  </div> -->
 
   
 </template>

@@ -2,7 +2,7 @@
 <template>
   <nav class="navbar sticky-top navbar-expand-md navbar-light">
     <div class="container">
-      <a class="navbar-brand me-5" href="#"
+      <a class="navbar-brand me-5" href=".."
         ><img alt="Vue logo" class="logo" src="../assets/oliveWood3.png"/>
       </a>
       <button
