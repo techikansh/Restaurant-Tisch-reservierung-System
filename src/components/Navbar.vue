@@ -61,7 +61,7 @@ header{
 header .logo {
   position: absolute;
   top:10%;
-  left: 3%;
+  left: 1.5%;
   width: 300px;
   height : 300px;
   object-fit: cover;
