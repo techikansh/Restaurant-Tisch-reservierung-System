@@ -44,6 +44,7 @@
 
 
 <style scoped>
+
 #links {
   color: #ffffff;
   font-size: 20;
@@ -74,9 +75,10 @@ header .logo {
 
 
 header li .nav-link-home{
+  text-decoration: none;
   color: #F8B333;
   font-size : 25px;
-  font-family: 'BoucherieCursive', bold, cursive;
+  font-family: 'Bradley Hand', bold, cursive;
   position: absolute;
   top: 140%;
   right: 10%;
@@ -85,22 +87,24 @@ header li .nav-link-home{
 }
 
 header li .nav-link-uns{
+  text-decoration: none;
   color: #F8B333;
   position: absolute;
   top: 140%;
   right: 14%;
-  font-family: 'BoucherieCursive', bold, cursive;
+  font-family: 'Bradley Hand', bold, cursive;
   font-size : 25px;
   /* transform: translate(40%, 195%); */
   /* float : right; */
 }
 
 header li .nav-link-contact{
+  text-decoration: none;
   color: #F8B333;
   position: absolute;
   top: 140%;
   right: 20%;
-  font-family: 'BoucherieCursive', bold, cursive;
+  font-family: 'Bradley Hand', bold, cursive;
   font-size : 25px;
   /* transform: translate(30%, 195%); */
   /* float : right; */

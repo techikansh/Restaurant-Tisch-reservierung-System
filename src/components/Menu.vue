@@ -34,7 +34,7 @@
 
   <div class="row mt-5" style="/*justify-content: center !important*/">
     <!-- Food Items -->
-    <div class="col-sm-2 col-md-4 col-lg-3 mt-5" id="item">
+    <div class="col-sm-2 col-md-4 col-lg-3 mt-4" id="item">
       <div id="front">
         <img src="../assets/pizza.png" alt="items" id="itemImg" />
       </div>
@@ -44,7 +44,7 @@
         </div>
       </div>
     </div>
-    <div class="col-sm-2 col-md-4 col-lg-3 mt-5" id="item">
+    <div class="col-sm-2 col-md-4 col-lg-3 mt-4" id="item">
       <div id="front">
         <img src="../assets/pasta.png" alt="items" id="itemImg" />
       </div>
@@ -54,7 +54,7 @@
         </div>
       </div>
     </div>
-    <div class="col-sm-2 col-md-4 col-lg-3 mt-5" id="item">
+    <div class="col-sm-2 col-md-4 col-lg-3 mt-4" id="item">
       <div id="front">
         <img src="../assets/burger.png" alt="items" id="itemImg" />
       </div>
@@ -64,7 +64,7 @@
         </div>
       </div>
     </div>
-    <div class="col-sm-2 col-md-4 col-lg-3 mt-5" id="item">
+    <div class="col-sm-2 col-md-4 col-lg-3 mt-4" id="item">
       <div id="front">
         <img src="../assets/dessert.png" alt="items" id="itemImg" />
       </div>
@@ -84,13 +84,21 @@
         </div>
       </div>
     </div>
+
+
   </div>
 </template>
 <style scoped>
+/* 
+#content1{
+  background-color: #000;
+} */
+
 #item {
   position: relative;
-  width: 320px;
+  width: 320;
   height: 200px;
+  
 }
 #front {
   position: relative;
@@ -113,6 +121,7 @@
 }
 
 #item > #front {
+  
   position: absolute;
   transform: perspective(600px) rotateY(0deg);
 
@@ -166,6 +175,8 @@
 #menu-hr-down{
   border-top : 2px solid;
 }
+
+
 
 
 </style>

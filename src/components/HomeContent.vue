@@ -15,7 +15,7 @@ function scrollToContent(){
 <template>
   <div class="d-flex flex-column text-center justify-content-between" id="videoContent">
     <div class="">
-      <img src="../assets/los.svg" id="logoWrapper" height="350" width="350" alt="" />
+      <img src="../assets/los.svg" id="logoWrapper" height="236" width="229" alt="" />
       
       <div class = "reserve-you-table" id = "r-y-t">
         <!-- <p>Reserve you Table</p> -->
@@ -27,23 +27,23 @@ function scrollToContent(){
       </div>
     </div>
 
-    <div class="mb-4" id="scroll">
+    <div class="mt-10 mb-1" id="scroll">
       <span id="scroll_link" >
         Esplorare
-        <img src="../assets/icons/arrow_down.png" class="mt-3" id="arrow" alt="" />
+        <img src="../assets/icons/arrow_down.png" class="mt-1" id="arrow" alt="" />
       </span>
     </div>
   </div>
 </template>
 <style scoped>
 
-#r-y-t{
+/* #r-y-t{
   color : #F8B333;
   font-size: 90px;
   font-family: 'Chalkduster', bold;
   transform: translate(0%, 435%);
 
-}
+} */
 
 #videoContent {
   min-height: calc(100vh - 150px);
@@ -59,8 +59,8 @@ function scrollToContent(){
   /* transform: translate(0%, 1035%); */
   color: #fff;
   display: inline-block;
-  /* display : flex; */
-  align-items: center;
+  
+  
   font-size: 33px;
   font-weight: 2000;
   font-family: 'BoucherieCursive', Bold, cursive;
@@ -79,8 +79,10 @@ function scrollToContent(){
   opacity: 1;
 }
 #scroll {
+  margin : 190px;
   text-align: center;
   cursor: pointer;
+  
   /* opacity: 0.3; */
 }
 #scroll_link {
@@ -95,6 +97,10 @@ function scrollToContent(){
   height: 25px;
   width: 25px;
 }
+
+
+
+
 </style>
 
 <script>

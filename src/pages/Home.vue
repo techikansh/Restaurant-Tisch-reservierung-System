@@ -27,9 +27,12 @@ console.log(pageName.fullPath)
     </div>
   </div>
 </template>
+
+
 <style scoped>
+
 #homeSection1 {
-  height: calc(100vh - 151px);
+  height: calc(110vh - 151px);
 }
 #videoContainer {
   position: absolute;
@@ -39,7 +42,9 @@ console.log(pageName.fullPath)
   z-index: -1;
 }
 #homeSection2 {
-  background-color: #FAF9F6;
+  /* background-color: #FAF9F6; */
+  /* margin : 0 0 0 0; */
+  background-color: #181818;
   min-height: 100vh;
 }
 </style>
