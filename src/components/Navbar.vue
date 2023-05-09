@@ -2,9 +2,9 @@
 <template>
   <nav class="navbar sticky-top navbar-expand-md navbar-light">
     <div class="container">
-      <a class="navbar-brand me-5" href=".."
-        ><img alt="Vue logo" class="logo" src="../assets/oliveWood.png" width = "125" height = "125"/>
-      </a>
+      <a class="navbar-brand me-5" href="#"
+        ><img alt="Vue logo" class="logo" src="../assets/logo.svg" width="125" height="125"
+      /></a>
       <button
         class="navbar-toggler"
         type="button"
@@ -17,74 +17,33 @@
         <span class="navbar-toggler-icon"></span>
       </button>
 
-
-
-
-
       <div class="collapse navbar-collapse ms-5" id="navbarSupportedContent">
-
         <ul class="navbar-nav me-auto my-2 my-lg-0" style="background-color: ; text-align: center">
           <li class="nav-item me-4">
-            <router-link class="nav-link" id="links" :to="{ name: 'home' }">Home</router-link>
+            <router-link class="nav-link" id="links" :to="{ name: 'home' }">HOME</router-link>
           </li>
-
           <li class="nav-item me-4">
             <router-link class="nav-link" id="links" :to="{ name: 'ueber-uns' }"
-              >About Us</router-link>
+              >ÜBER UNS</router-link
+            >
           </li>
 
           <li class="nav-item me-4">
-            <router-link class="nav-link" id="links" :to="{ name: 'kontakt' }">Contact</router-link>
+            <router-link class="nav-link" id="links" :to="{ name: 'kontakt' }">KONTAKT</router-link>
           </li>
-<!--           
-          <li class="nav-item me-4">
-            <router-link class="nav-link" id="links" :to="{ name: 'Sign-in' }">Sign in</router-link>
-          </li> -->
-
         </ul>
       </div>
     </div>
   </nav>
 </template>
-
-
 <style scoped>
-
 #links {
-  color: #ffffff;
-  font-size: 20;
-  font-weight: 800;
+  color: #f8b333;
+  font-size: 25px;
+  font-weight: 500;
 }
 #links:hover {
-  color: #F8B333;
+  color: #b47501;
+  font-weight: 700;
 }
-
-/* header{
-  position : relative;
-  overflow: hidden;
-}
-
-header .logo {
-  position: absolute;
-  
-  object-fit: cover;
-   transform: translate(-10%, -30%); 
-} 
-*/
-
-
-
-
-
-
-header li .nav-link-home{
-  text-decoration: none;
-  color: #F8B333;
-  font-size : 25px;
-  font-family: 'Bradley Hand', bold, cursive;
-  position: absolute;
-
-}
-
-
 </style>
