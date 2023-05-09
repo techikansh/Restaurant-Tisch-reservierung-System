@@ -15,7 +15,7 @@ function scrollToContent(){
 <template>
   <div class="d-flex flex-column text-center justify-content-between" id="videoContent">
     <div class="">
-      <img src="../assets/los.svg" id="logoWrapper" height="236" width="229" alt="" />
+      <img src="../assets/los.svg" id="logoWrapper" height="200" width="200" alt="" />
       
       <div class = "reserve-you-table" id = "r-y-t">
         <!-- <p>Reserve you Table</p> -->
@@ -79,7 +79,7 @@ function scrollToContent(){
   opacity: 1;
 }
 #scroll {
-  margin : 190px;
+  margin : 90px;
   text-align: center;
   cursor: pointer;
   

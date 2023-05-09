@@ -17,7 +17,7 @@
         </a>
       </div>
 
-      <ul class="list-inline">
+      <ul class="list-inline" id = "ft">
         <li class="list-inline-item"><a href="#">Home</a></li>
         <li class="list-inline-item"><a href="#">Services</a></li>
         <li class="list-inline-item"><a href="#">About</a></li>
@@ -152,6 +152,10 @@
 
 .footer-basic .list-inline{
   color: #fff;
+}
+
+#ft :hover{
+  color : #F8B333;
 }
 
 </style>

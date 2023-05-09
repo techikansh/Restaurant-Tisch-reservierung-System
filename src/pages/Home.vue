@@ -32,7 +32,7 @@ console.log(pageName.fullPath)
 <style scoped>
 
 #homeSection1 {
-  height: calc(110vh - 151px);
+  height: calc(100vh - 151px);
 }
 #videoContainer {
   position: absolute;

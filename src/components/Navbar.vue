@@ -3,7 +3,7 @@
   <nav class="navbar sticky-top navbar-expand-md navbar-light">
     <div class="container">
       <a class="navbar-brand me-5" href=".."
-        ><img alt="Vue logo" class="logo" src="../assets/oliveWood3.png"/>
+        ><img alt="Vue logo" class="logo" src="../assets/oliveWood.png" width = "125" height = "125"/>
       </a>
       <button
         class="navbar-toggler"
@@ -25,17 +25,22 @@
 
         <ul class="navbar-nav me-auto my-2 my-lg-0" style="background-color: ; text-align: center">
           <li class="nav-item me-4">
-            <router-link class="nav-link-home" id="links" :to="{ name: 'home' }">Home</router-link>
-          </li>
-          <li class="nav-item me-4">
-            <router-link class="nav-link-uns" id="links" :to="{ name: 'ueber-uns' }"
-              >About Us</router-link
-            >
+            <router-link class="nav-link" id="links" :to="{ name: 'home' }">Home</router-link>
           </li>
 
           <li class="nav-item me-4">
-            <router-link class="nav-link-contact" id="links" :to="{ name: 'kontakt' }">Contact</router-link>
+            <router-link class="nav-link" id="links" :to="{ name: 'ueber-uns' }"
+              >About Us</router-link>
           </li>
+
+          <li class="nav-item me-4">
+            <router-link class="nav-link" id="links" :to="{ name: 'kontakt' }">Contact</router-link>
+          </li>
+<!--           
+          <li class="nav-item me-4">
+            <router-link class="nav-link" id="links" :to="{ name: 'Sign-in' }">Sign in</router-link>
+          </li> -->
+
         </ul>
       </div>
     </div>
@@ -54,20 +59,18 @@
   color: #F8B333;
 }
 
-header{
+/* header{
   position : relative;
   overflow: hidden;
 }
 
 header .logo {
   position: absolute;
-  top:10%;
-  left: 1.5%;
-  width: 300px;
-  height : 300px;
+  
   object-fit: cover;
-  transform: translate(-10%, -30%);
-}
+   transform: translate(-10%, -30%); 
+} 
+*/
 
 
 
@@ -80,34 +83,8 @@ header li .nav-link-home{
   font-size : 25px;
   font-family: 'Bradley Hand', bold, cursive;
   position: absolute;
-  top: 140%;
-  right: 10%;
-  /* transform: translate(50%, 195%); */
-  /* float : right; */
+
 }
 
-header li .nav-link-uns{
-  text-decoration: none;
-  color: #F8B333;
-  position: absolute;
-  top: 140%;
-  right: 14%;
-  font-family: 'Bradley Hand', bold, cursive;
-  font-size : 25px;
-  /* transform: translate(40%, 195%); */
-  /* float : right; */
-}
-
-header li .nav-link-contact{
-  text-decoration: none;
-  color: #F8B333;
-  position: absolute;
-  top: 140%;
-  right: 20%;
-  font-family: 'Bradley Hand', bold, cursive;
-  font-size : 25px;
-  /* transform: translate(30%, 195%); */
-  /* float : right; */
-}
 
 </style>
