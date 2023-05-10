@@ -32,6 +32,15 @@ function startTimer() {
 
 const showTimer = ref(false);
 
+
+// const signUpLink = document.querySelector('#loginSignupLink');
+// signUpLink.addEventListener('click', function(){
+//   const div1 = document.querySelector('#div_login');
+//   const div2 = document.querySelector('#div_signup');
+//   div1.style.filter = 'blur(5px)';
+//   div2.style.backgroundColor = 'red';
+// });
+
 </script>
 
 <!-- <script>
@@ -48,7 +57,7 @@ const showTimer = ref(false);
     </div>
     <div class="row pt-2">
       <div class="col-sm-1 col-md-1 col-lg-2 col-xl-1" style="background-color: ;"></div>
-      <div class="col-sm-5 col-md-4 col-lg-3 col-xl-5" style="background-color: ;">
+      <div class="col-sm-5 col-md-4 col-lg-3 col-xl-5" id = "div_login" style="background-color: ;">
         <form
           action=""
           class="row gy-3 needs-validation pt-5 ps-3 pe-3 pb-2"
@@ -93,13 +102,22 @@ const showTimer = ref(false);
               </div>
 
               <div class="col-sm-3"></div>
+
+              <div class = "col-12"></div>
+              <div class = "col-12"></div>
+              <div class = "col-12"></div>
+              <div class = "col-12"></div>
+              <div class = "col-12"></div>
+              <div class = "col-12"></div>
+              <div class = "col-12"></div>
+
               <div class="col-12 text-center mt-5" id="loginSignup">
                 <h6>Don't have an account? <a href="" id="loginSignupLink">SignUp</a></h6>
               </div>
 
         </form>
       </div>
-      <div class="col-sm-5 col-md-6 col-lg-5 col-xl-5" style="background-color: ;">
+      <div class="col-sm-5 col-md-6 col-lg-5 col-xl-5" id = "div_signup" style="background-color: ;">
       
         <!-- Devansh's Stuff -->
 
@@ -374,5 +392,9 @@ const showTimer = ref(false);
 #timer{
   color : #f8b333;
 }
+
+/* #login{
+
+} */
 
 </style>
