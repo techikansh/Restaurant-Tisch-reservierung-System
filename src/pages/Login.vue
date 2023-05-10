@@ -1,14 +1,54 @@
-<script setup></script>
+<script setup>
+
+import { ref } from 'vue';
+
+const btnText = ref('Verify Email');
+const isClicked = ref(false);
+const timeLeft = ref(59);
+let timerId = null;
+const isClickable = ref(true);
+
+function changeText() {
+  if (isClicked.value === false) {
+    btnText.value = 'Resend OTP';
+    isClicked.value = true;
+  }
+}
+
+function startTimer() {
+  changeText();
+  showTimer.value = true;
+  isClickable.value = false;
+  timerId = setInterval(() => {
+    if (timeLeft.value > 0) {
+      timeLeft.value--;
+    } else {
+      clearInterval(timerId);
+      timeLeft.value = 59;
+      isClickable.value = true;
+    }
+  }, 800);
+}
+
+const showTimer = ref(false);
+
+</script>
+
+<!-- <script>
+
+
+</script> -->
+
 <template>
-  <div class="container-fluid pt-5" id="login">
+  <div class="container-fluid pt-3" id="login">
     <div class="row">
       <div class="col-12 text-center" id="loginTxt">
         <h1>Welcome Back!!</h1>
       </div>
     </div>
     <div class="row pt-2">
-      <div class="col-sm-1 col-md-1 col-lg-2 col-xl-2" style="background-color: aqua;"></div>
-      <div class="col-sm-5 col-md-4 col-lg-3 col-xl-3" style="background-color: blueviolet;">
+      <div class="col-sm-1 col-md-1 col-lg-2 col-xl-1" style="background-color: ;"></div>
+      <div class="col-sm-5 col-md-4 col-lg-3 col-xl-5" style="background-color: ;">
         <form
           action=""
           class="row gy-3 needs-validation pt-5 ps-3 pe-3 pb-2"
@@ -59,7 +99,7 @@
 
         </form>
       </div>
-      <div class="col-sm-5 col-md-6 col-lg-5 col-xl-5" style="background-color: chartreuse;">
+      <div class="col-sm-5 col-md-6 col-lg-5 col-xl-5" style="background-color: ;">
       
         <!-- Devansh's Stuff -->
 
@@ -113,7 +153,8 @@
           </div>
           <!-- <div class="col-sm-3"></div>  commented by devansh-->
           <div class="col-sm-6 text-center d-grid pt-3">
-            <button class="btn" id="signUpBtn">Verify Email</button>
+            <button class="btn" id="signUpBtn" @click="startTimer" v-text="btnText" :disabled="isDisabled" type="button"></button>
+            <div  v-if="showTimer" id = "timer"> {{ timeLeft }} </div>
           </div>
           <!-- <div class="col-sm-3"></div> commented by devansh -->
           <!-- <div class="col-12 text-center mt-5" id="signUpLogin">
@@ -140,12 +181,12 @@
 
         <form
           action=""
-          class="row gy-3 needs-validation pt-5 ps-3 pe-3 pb-2"
+          class="row gy-3 needs-validation pt-2 ps-3 pe-3 pb-2"
           autocomplete="off"
           id="signUpOTPForm"
           novalidate
         >
-          <div class="col-sm-6">
+          <!-- <div class="col-sm-6">
             <div class="form-floating">
               <input
                 type="text"
@@ -157,26 +198,29 @@
               />
               <label for="signUpOTP" id="signUpLabels">OTP</label>
             </div>
-          </div>
-          <div class="col-sm-6">
+          </div> commented by dev-->
+          <!-- <div class="col-sm-6">
             <div class="row">
               <div class="col-12">
                 <a href="#" id="signUpResendOTP">Resend OTP?</a>
               </div>
               <div class="col-12" id="signUpOTPexpire">OTP expire in : <span>123</span></div>
             </div>
+          </div>  commented by dev-->
+
+
+          <div class="col-sm-3"></div>
+          <div class="col-sm-6 text-center d-grid pt-1">
+            <button class="btn" id="signUpBtn"> Verify OTP </button>
           </div>
           <div class="col-sm-3"></div>
-          <div class="col-sm-6 text-center d-grid pt-3">
-            <button class="btn" id="signUpBtn">Verify OTP</button>
-          </div>
-          <div class="col-sm-3"></div>
+
         </form>
 
 
         <form
           action=""
-          class="row gy-3 needs-validation pt-5 ps-3 pe-3 pb-2"
+          class="row gy-3 needs-validation pt-2 ps-3 pe-3 pb-2"
           autocomplete="off"
           id="signUpPasswordForm"
           novalidate
@@ -221,13 +265,13 @@
         <!-- till here Devansh's stuff -->
 
       </div>
-      <div class="col-sm-1 col-md-1 col-lg-2 col-xl-2" style="background-color: burlywood;"></div>
+      <div class="col-sm-1 col-md-1 col-lg-2 col-xl-1" style="background-color: ;"></div>
     </div>
   </div>
 </template>
 <style scoped>
 #login {
-  margin-top: 5%;
+  margin-top: 3%;
 }
 #loginTxt {
   color: #b47501;
@@ -272,4 +316,63 @@
   color: b47501;
   text-decoration: underline;
 }
+
+
+
+#signUp {
+  margin-top: 5%;
+}
+#signUpTxt {
+  color: #b47501;
+}
+#signUpForm,
+#signUpOTPForm,
+#signUpPasswordForm {
+  /* margin-top: 5%; */
+  /* box-shadow: rgba(248, 179, 51, 0.1) 0px 20px 30px; */
+}
+#signUpLabels {
+  color: #b47501;
+}
+#signUpResendOTP {
+  color: #b47501;
+}
+#signUpResendOTP:hover {
+  color: #f8b333;
+}
+#signUpOTPexpire {
+  color: burlywood;
+}
+#signUpBtn {
+  --bs-btn-color: #b47501;
+  --bs-btn-border-color: #b47501;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #b47501;
+  --bs-btn-hover-border-color: #b47501;
+  --bs-btn-focus-shadow-rgb: 25, 135, 84;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #b47501;
+  --bs-btn-active-border-color: #b47501;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #b47501;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #b47501;
+  --bs-gradient: none;
+}
+#signUpLogin {
+  color: burlywood;
+}
+#signUpLoginLink {
+  text-decoration: none;
+  color: burlywood;
+}
+#signUpLoginLink:hover {
+  color: b47501;
+  text-decoration: underline;
+}
+
+#timer{
+  color : #f8b333;
+}
+
 </style>
