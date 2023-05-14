@@ -2,11 +2,18 @@
 <template>
   <form
     action=""
-    class="row gy-3 needs-validation pt-5 ps-3 pe-3 pb-2"
+    class="row gy-3 needs-validation pt-2 ps-3 pe-3 pb-2"
     autocomplete="off"
     id="loginForm"
   >
+  <div class="col-sm-3"></div>
+    <div class="col-sm-6 text-center vertical-top d-grid pt-1" id = "signin1">
+      <div id = "signin">Sign in</div>
+    </div>
+    <div class="col-sm-3"></div>
+
     <div class="col-12">
+
       <div class="form-floating">
         <input
           type="email"
@@ -34,7 +41,7 @@
       <a href="#" id="loginForgot">Forgot Password?</a>
     </div>
     <div class="col-sm-3"></div>
-    <div class="col-sm-6 text-center d-grid pt-3">
+    <div class="col-sm-6 text-center vertical-top d-grid pt-3">
       <button class="btn" id="loginBtn">Login</button>
     </div>
     <div class="col-sm-3"></div>
@@ -66,6 +73,7 @@
   color: #f8b333;
 }
 #loginBtn {
+  border-radius: 15px;
   --bs-btn-color: #b47501;
   --bs-btn-border-color: #b47501;
   --bs-btn-hover-color: #fff;
@@ -81,4 +89,14 @@
   --bs-btn-disabled-border-color: #b47501;
   --bs-gradient: none;
 }
+
+#signin{
+  font-size: 23px;
+  font-weight: bold;
+  }
+
+
+
+
+
 </style>

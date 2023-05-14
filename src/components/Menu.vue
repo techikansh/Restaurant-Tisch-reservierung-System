@@ -280,6 +280,8 @@
   position: absolute;
   transform: perspective(600px) rotateY(180deg);
   background: #262626;
+  /* background:#EA3C53; */
+
   color: #fff;
   box-shadow: rgba(248, 179, 51, 1) 0px 20px 30px -10px;
   /* box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,

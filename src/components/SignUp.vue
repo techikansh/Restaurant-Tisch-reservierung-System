@@ -2,11 +2,18 @@
 <template>
   <form
     action=""
-    class="row gy-3 needs-validation pt-5 ps-3 pe-3 pb-2"
+    class="row gy-3 needs-validation pt-2 ps-3 pe-3 pb-2"
     autocomplete="off"
     id="signUpForm"
     novalidate
   >
+
+  <div class="col-sm-3"></div>
+    <div class="col-sm-6 text-center vertical-up d-grid pt-1">
+      <div id="signup">Create Account</div>
+    </div>
+
+
     <div class="col-sm-6">
       <div class="form-floating">
         <input
@@ -160,6 +167,7 @@
   color: burlywood;
 }
 #signUpBtn {
+  border-radius: 15px;
   --bs-btn-color: #b47501;
   --bs-btn-border-color: #b47501;
   --bs-btn-hover-color: #fff;
@@ -174,5 +182,10 @@
   --bs-btn-disabled-bg: transparent;
   --bs-btn-disabled-border-color: #b47501;
   --bs-gradient: none;
+}
+
+#signup{
+  font-size: 23px;
+  font-weight: bold;
 }
 </style>
