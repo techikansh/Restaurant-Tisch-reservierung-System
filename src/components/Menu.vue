@@ -56,8 +56,8 @@
       </div>
     </div>
     <!-- Item 3 -->
-    <!-- <div class="col-sm-4 col-md-4 col-lg-3 mt-5" id="itemCol"> -->
-      <!-- <div id="item">
+    <div class="col-sm-4 col-md-4 col-lg-3 mt-5" id="itemCol">
+      <div id="item">
         <div id="front">
           <img src="../assets/spoon.jpg" alt="items" id="itemImg" />
         </div>
@@ -76,14 +76,13 @@
             </div>
           </div>
         </div>
-      </div> -->
-    <!-- </div> -->
-
+      </div>
+    </div>
     <!-- Item 4 -->
-    <!-- <div class="col-sm-4 col-md-4 col-lg-3 mt-5" id="itemCol"> -->
-      <!-- <div id="item">
+    <div class="col-sm-4 col-md-4 col-lg-3 mt-5" id="itemCol">
+      <div id="item">
         <div id="front">
-          <img src="../assets/spoon.jpg" alt="items" id="itemImg" />
+          <img src="../assets/pp.jpg" alt="items" id="itemImg" />
         </div>
         <div id="back">
           <div class="text-center" id="itemText">
@@ -100,8 +99,8 @@
             </div>
           </div>
         </div>
-      </div> -->
-    <!-- </div> -->
+      </div>
+    </div>
     <!-- Item 5 -->
     <div class="col-sm-4 col-md-4 col-lg-3 mt-5" id="itemCol">
       <div id="item">
@@ -149,7 +148,7 @@
       </div>
     </div>
     <!-- Item 7 -->
-    <!-- <div class="col-sm-4 col-md-4 col-lg-3 mt-5" id="itemCol">
+    <div class="col-sm-4 col-md-4 col-lg-3 mt-5" id="itemCol">
       <div id="item">
         <div id="front">
           <img src="../assets/dessert.png" alt="items" id="itemImg" />
@@ -170,7 +169,7 @@
           </div>
         </div>
       </div>
-    </div> -->
+    </div>
   </div>
   <!-- ******************************************************************************************** -->
 </template>
