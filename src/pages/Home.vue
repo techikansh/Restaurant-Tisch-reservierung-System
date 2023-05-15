@@ -37,5 +37,7 @@ console.log(pageName.fullPath)
 #homeSection2 {
   /* background-color: #faf9f6; */
   min-height: 100vh;
+  /* margin-left : 1px;
+  margin-right : 1px; */
 }
 </style>
