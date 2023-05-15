@@ -2,7 +2,9 @@
 <template>
   <div class="row pb-5" style="">
     <div class="col-lg-12 text-center" id="menu">
+      <hr id = "hr">
       <h1 id="menuTxt">Menu</h1>
+      <hr id = "hr">
     </div>
   </div>
   <!--********************************************************************************************
@@ -85,8 +87,9 @@
         </div>
       </div>
     </div>
+
     <!-- Item 3 -->
-    <!-- <div class="col-sm-4 col-md-4 col-lg-3 mt-5" id="itemCol">
+    <div class="col-sm-4 col-md-4 col-lg-3 mt-5" id="itemCol">
       <div id="item">
         <div id="front">
           <img src="../assets/spoon.jpg" alt="items" id="itemImg" />
@@ -96,22 +99,37 @@
             <h3>Risotto</h3>
           </div>
           <div id="name_price">
+
             <div id="names">
-              <h6>margerita</h6>
+              <h6>Margerita</h6>
               <h6>Caprese</h6>
+              <h6>Carbonara</h6>
+              <h6>Frutti di Romana</h6>
+              <h6>Bombay</h6>
+              <h6>Calzone</h6>
+              <h6>Pizza al Pesto</h6>  
+              <h6>Pizza al Pesto</h6>  
             </div>
+
             <div id="prices">
               <h6>11€</h6>
               <h6>13€</h6>
+              <h6>12€</h6>
+              <h6>9€</h6>
+              <h6>12.50€</h6>
+              <h6>11.50</h6>
+              <h6>13€</h6>
+              <h6>13€</h6>
             </div>
+
           </div>
         </div>
       </div>
-    </div> -->
+    </div>
 
     <!-- Item 4 -->
 
-    <!-- <div class="col-sm-4 col-md-4 col-lg-3 mt-5" id="itemCol">
+    <div class="col-sm-4 col-md-4 col-lg-3 mt-5" id="itemCol">
       <div id="item">
         <div id="front">
           <img src="../assets/pp.jpg" alt="items" id="itemImg" />
@@ -121,18 +139,33 @@
             <h3>Antipasti</h3>
           </div>
           <div id="name_price">
+
             <div id="names">
-              <h6>margerita</h6>
+              <h6>Margerita</h6>
               <h6>Caprese</h6>
+              <h6>Carbonara</h6>
+              <h6>Frutti di Romana</h6>
+              <h6>Bombay</h6>
+              <h6>Calzone</h6>
+              <h6>Pizza al Pesto</h6>  
+              <h6>Pizza al Pesto</h6>  
             </div>
+
             <div id="prices">
               <h6>11€</h6>
               <h6>13€</h6>
+              <h6>12€</h6>
+              <h6>9€</h6>
+              <h6>12.50€</h6>
+              <h6>11.50</h6>
+              <h6>13€</h6>
+              <h6>13€</h6>
             </div>
+
           </div>
         </div>
       </div>
-    </div> -->
+    </div>
 
     <!-- Item 5 -->
 
@@ -176,7 +209,7 @@
 
     <!-- Item 6 -->
 
-    <!-- <div class="col-sm-4 col-md-4 col-lg-3 mt-5" id="itemCol">
+    <div class="col-sm-4 col-md-4 col-lg-3 mt-5" id="itemCol">
       <div id="item">
         <div id="front">
           <img src="../assets/cocktail.png" alt="items" id="itemImg" />
@@ -186,18 +219,33 @@
             <h3>Drinks</h3>
           </div>
           <div id="name_price">
-            <div id="names">
-              <h6>margerita</h6>
+
+              <div id="names">
+              <h6>Margerita</h6>
               <h6>Caprese</h6>
+              <h6>Carbonara</h6>
+              <h6>Frutti di Romana</h6>
+              <h6>Bombay</h6>
+              <h6>Calzone</h6>
+              <h6>Pizza al Pesto</h6>  
+              <h6>Pizza al Pesto</h6>  
             </div>
+
             <div id="prices">
               <h6>11€</h6>
               <h6>13€</h6>
+              <h6>12€</h6>
+              <h6>9€</h6>
+              <h6>12.50€</h6>
+              <h6>11.50</h6>
+              <h6>13€</h6>
+              <h6>13€</h6>
             </div>
+
           </div>
         </div>
       </div>
-    </div> -->
+    </div>
 
     <!-- Item 7 -->
     
@@ -238,7 +286,54 @@
         </div>
       </div>
     </div>
+
+
+
+  <!-- Item 8 -->
+    
+  <div class="col-sm-4 col-md-4 col-lg-3 mt-5" id="itemCol">
+      <div id="item">
+        <div id="front">
+          <img src="../assets/dessert.png" alt="items" id="itemImg" />
+        </div>
+        <div id="back">
+          <div class="text-center" id="itemText">
+            <h3>Dessert</h3>
+          </div>
+          <div id="name_price" >
+
+            <div id="names">
+              <h6>Margerita</h6>
+              <h6>Caprese</h6>
+              <h6>Carbonara</h6>
+              <h6>Frutti di Romana</h6>
+              <h6>Bombay</h6>
+              <h6>Calzone</h6>
+              <h6>Pizza al Pesto</h6>  
+              <h6>Pizza al Pesto</h6>  
+            </div>
+
+            <div id="prices">
+              <h6>11€</h6>
+              <h6>13€</h6>
+              <h6>12€</h6>
+              <h6>9€</h6>
+              <h6>12.50€</h6>
+              <h6>11.50</h6>
+              <h6>13€</h6>
+              <h6>13€</h6>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+
+
+
+
+
   <!-- ******************************************************************************************** -->
 </template>
 <style scoped>
@@ -246,18 +341,30 @@
   font-family: 'Apple Chancery';
   font-style: italic;
   text-align: left;
+  color : #ffffff;
 }
 #prices{
+  font-family: 'Apple Chancery';
+  font-style: italic;
   text-align: right;
+}
+
+#itemText{
+  font-family: chalkduster;
+}
+
+#hr{
+  border-width: 5px;
+
 }
 
 #menu {
   color: #f8b333;
   font-size: 1.625rem;
-  font-family: 'BoucherieCursive', cursive;
+  font-family: 'Chalkduster', 'BoucherieCursive', cursive;
   /* border-top: 2px dashed #f8b333;
   border-bottom: 2px dashed #f8b333; */
-  text-shadow: 11px 7px 9px #5a5650;
+  /* text-shadow: 11px 7px 9px #5a5650; */
 }
 #menu:hover {
   text-shadow: none;
@@ -346,18 +453,26 @@
   }
 }
 
-#item > #front {
+/* #item > #front {
   transform: perspective(600px) rotateY(0deg);
-  backface-visibility: hidden; /* cant see the backside elements as theyre turning around */
+  backface-visibility: hidden; 
   transition: transform 0.5s linear 0s;
-}
+} */
 
 /* style the item class with all child div's of id #back */
 #item > #back {
   position: absolute;
-  transform: perspective(600px) rotateY(180deg);
-  background: #262626;
-  /* background:#EA3C53; */
+  /* transform: perspective(600px) rotateY(180deg); */
+  
+  /* background-image: url("../assets/pizza1.jpg"); /*dev's code*/
+  background-repeat: no-repeat;
+  background-size: cover; 
+  /* filter: contrast(300%);
+  filter: blur(8px);
+  animation: 1.2s ease-out 0s 1 slideUp; */
+
+  /* background: #262626; */
+  background:#434242;
 
   color: #fff;
   box-shadow: rgba(248, 179, 51, 1) 0px 20px 30px -10px;
