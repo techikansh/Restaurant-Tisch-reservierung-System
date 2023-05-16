@@ -43,6 +43,8 @@
   font-size: 25px;
   font-weight: 500;
   font-family : "Chalkduster";
+  font-family : "Chalkduster";
+
 }
 #links:hover {
   color: #b47501;
