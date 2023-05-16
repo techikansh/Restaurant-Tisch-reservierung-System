@@ -3,7 +3,7 @@
   <nav class="navbar sticky-top navbar-expand-md navbar-light">
     <div class="container" id = "_nav_">
       <a class="navbar-brand me-5" href="#"
-        ><img alt="Vue logo" class="logo" src="../assets/logo.svg" width="125" height="125"
+        ><img alt="Vue logo" class="logo" src="../assets/clipart2107333.png" width="125" height="125"
       /></a>
       <button
         class="navbar-toggler"
@@ -39,8 +39,10 @@
 <style scoped>
 #links {
   color: #f8b333;
+  /* color: #fff; */
   font-size: 25px;
   font-weight: 500;
+  font-family : "Chalkduster";
 }
 #links:hover {
   color: #b47501;

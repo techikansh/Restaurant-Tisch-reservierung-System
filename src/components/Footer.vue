@@ -37,7 +37,8 @@
 
 .footer-basic {
   padding: 40px 0;
-  background-color: #000;
+  /* background-color: #000; */
+  background-color: #434242;
   color: #4b4c4d;
 }
 
@@ -101,10 +102,10 @@
   display: inline-block;
   width: 40px; 
   height: 40px; 
-  background-image: url('../assets/insta.png'); /* set the image as the background */
+  background-image: url('../assets/iii.png'); /* set the image as the background */
   background-size: cover; /* scale the image to cover the entire icon */
   background-position: center; /* center the image within the icon */
-  border-radius: 50%; /* make the icon circular */
+  /* border-radius: 50%; make the icon circular */
 
 }
 .footer-basic .social .icon-ion-social-snapchat{
@@ -115,7 +116,7 @@
   background-image: url('../assets/snapchat.png'); /* set the image as the background */
    background-size: cover; /*scale the image to cover the entire icon */
   background-position: center; /* center the image within the icon */
-  border-radius: 50%; /* make the icon circular */
+  /* border-radius: 50%; make the icon circular */
 
 }
 .footer-basic .social .icon-ion-social-twitter{
@@ -124,9 +125,10 @@
   width: 40px; 
   height: 40px; 
   background-image: url('../assets/twitter.png'); /* set the image as the background */
-  background-size: cover; /* scale the image to cover the entire icon */
+  background-size: contain; /* scale the image to cover the entire icon */
   background-position: center; /* center the image within the icon */
-  border-radius: 50%; /* make the icon circular */
+  background-repeat: no-repeat;
+  /* border-radius: 50%; make the icon circular */
 
 }
 .footer-basic .social .icon-ion-social-facebook{
@@ -134,10 +136,11 @@
   display: inline-block;
   width: 40px; 
   height: 40px; 
-  background-image: url('../assets/fb.png'); /* set the image as the background */
-  background-size: cover; /* scale the image to cover the entire icon */
+  background-image: url('../assets/pngfind.com-thomas-the-dank-engine-6738833.png'); /* set the image as the background */
+  background-size: contain; /* scale the image to cover the entire icon */
   background-position: center; /* center the image within the icon */
-  border-radius: 50%; /* make the icon circular */
+  background-repeat: no-repeat;
+  /* border-radius: 50%;  make the icon circular */
 
 }
 
