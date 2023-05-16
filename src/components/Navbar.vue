@@ -49,6 +49,7 @@
   font-weight: 700;
 }
 
+
 #_nav_{
   /* margin-left: 350px;
   margin-right: 350px; */
