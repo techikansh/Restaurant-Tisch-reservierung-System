@@ -1,161 +1,107 @@
 <script setup></script>
 <template>
-  <div class="footer-basic">
-    <footer>
-      <div class="social">
-        <a href="https://www.instagram.com/">
-          <i class="icon-ion-social-instagram"></i>
-        </a>
-        <a href="https://www.snapchat.com/">
-            <i class="icon-ion-social-snapchat"></i>
-        </a>
-        <a href="https://twitter.com/">
-            <i class="icon-ion-social-twitter"></i>
-        </a>
-        <a href="https://www.facebook.com/">
-            <i class="icon-ion-social-facebook"></i>
-        </a>
+  <footer>
+    <div class="container-fluid pt-5" id="footer">
+      <div class="row">
+        <div class="col-sm-4 p-3" id="footer_start">
+          <router-link class="nav-link mb-2" id="links" :to="{ name: 'home' }">Home</router-link>
+          <router-link class="nav-link mb-2" id="links" :to="{ name: 'about' }"
+            >About Us</router-link
+          >
+          <router-link class="nav-link mb-2" id="links" :to="{ name: 'contact' }"
+            >Contact</router-link
+          >
+        </div>
+        <div class="col-sm-4 p-3" id="footer_center">
+          <router-link class="nav-link mb-2" id="links" :to="{ name: 'account' }"
+            >SignUp</router-link
+          >
+          <router-link class="nav-link mb-2" id="links" :to="{ name: 'account' }"
+            >Cancel Reservation</router-link
+          >
+        </div>
+        <div class="col-sm-4 p-3" id="footer_end">
+          <router-link class="nav-link mb-2" id="links" :to="{ name: 'imprint' }"
+            >Imprint</router-link
+          >
+          <router-link class="nav-link mb-2" id="links" :to="{ name: 'terms' }"
+            >Terms & Conditions</router-link
+          >
+          <!-- <router-link class="nav-link mb-2" id="links" :to="{ name: 'contact' }"
+            >Kontaktdatenerhebung Covid-19</router-link
+          > -->
+        </div>
       </div>
-
-      <ul class="list-inline" id = "ft">
-        <li class="list-inline-item"><a href="#">Home</a></li>
-        <li class="list-inline-item"><a href="#">Services</a></li>
-        <li class="list-inline-item"><a href="#">About</a></li>
-        <li class="list-inline-item"><a href="#">Terms</a></li>
-        <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
-      </ul>
-      <p class="copyright">OliveWood © 2023</p>
-    </footer>
-  </div>
-
-
-
-
-  <!-- <footer>
-    <div class="container-fluid" id="footer" style = "background-color: #000000;">
-      <h1 style = "color : #ffffff;">Footer</h1>
+      <div class="row">
+        <div
+          class="col-12 text-center p-3"
+          style="display: flex; flex-direction: row; justify-content: center"
+        >
+          <div class="ms-5" id="social_icons">
+            <i class="fa-brands fa-instagram fa-2xl"></i>
+          </div>
+          <div class="ms-5" id="social_icons">
+            <i class="fa-brands fa-snapchat fa-2xl"></i>
+          </div>
+          <div class="ms-5" id="social_icons">
+            <i class="fa-brands fa-square-twitter fa-2xl"></i>
+          </div>
+          <div class="ms-5" id="social_icons">
+            <i class="fa-brands fa-square-facebook fa-2xl"></i>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 text-center" id="copyright">
+          <h6><span style="color: #f8b333">©</span>2023 OliveWood</h6>
+        </div>
+      </div>
     </div>
-  </footer> -->
+  </footer>
 </template>
 <style scoped>
-/* #footer {
+#footer {
   min-height: 25vh;
-  text-align: center;
-} */
-
-
-.footer-basic {
-  padding: 40px 0;
-  background-color: #000;
-  color: #4b4c4d;
+  justify-content: space-between;
+}
+#footer_start,
+#footer_center,
+#footer_end {
+  text-align: center !important;
+  margin-bottom: 20px;
+}
+#links {
+  color: #f4ebd9;
+  font-size: 15px;
+  font-weight: 500;
+}
+#links:hover {
+  color: #b47501;
+}
+#social_icons {
+  color: #f4ebd9;
+  cursor: pointer;
+}
+#social_icons:hover {
+  color: #b47501;
+}
+#copyright {
+  color: #b47501;
+  width: 100%;
 }
 
-.footer-basic ul {
-  padding: 0;
-  list-style: none;
-  text-align: center;
-  font-size: 18px;
-  line-height: 1.6;
-  margin-bottom: 0;
+@media (min-width: 576px) {
+  #footer_start {
+    text-align: right !important;
+    margin-bottom: 20px;
+  }
+  #footer_center {
+    text-align: center !important;
+    margin-bottom: 20px;
+  }
+  #footer_end {
+    text-align: left !important;
+    margin-bottom: 20px;
+  }
 }
-
-.footer-basic li {
-  padding: 0 10px;
-}
-
-.footer-basic ul a {
-  color: inherit;
-  text-decoration: none;
-  opacity: 0.8;
-}
-
-.footer-basic ul a:hover {
-  opacity: 1;
-}
-
-.footer-basic .social {
-  text-align: center;
-  padding-bottom: 25px;
-}
-
-.footer-basic .social>a {
-  font-size: 24px;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  display: inline-block;
-  text-align: center;
-  border-radius: 50%;
-  /* border: 1px solid #ccc; */
-  margin: 0 8px;
-  color: inherit;
-  opacity: 0.75;
-}
-
-.footer-basic .social>a:hover {
-  opacity: 0.9;
-}
-
-.footer-basic .copyright {
-  margin-top: 15px;
-  text-align: center;
-  font-size: 13px;
-  color: #aaa;
-  margin-bottom: 0;
-}
-
-
-.footer-basic .social .icon-ion-social-instagram{
-  
-  display: inline-block;
-  width: 40px; 
-  height: 40px; 
-  background-image: url('../assets/insta.png'); /* set the image as the background */
-  background-size: cover; /* scale the image to cover the entire icon */
-  background-position: center; /* center the image within the icon */
-  border-radius: 50%; /* make the icon circular */
-
-}
-.footer-basic .social .icon-ion-social-snapchat{
-  
-  display: inline-block;
-  width: 40px; 
-  height: 40px; 
-  background-image: url('../assets/snapchat.png'); /* set the image as the background */
-   background-size: cover; /*scale the image to cover the entire icon */
-  background-position: center; /* center the image within the icon */
-  border-radius: 50%; /* make the icon circular */
-
-}
-.footer-basic .social .icon-ion-social-twitter{
-  
-  display: inline-block;
-  width: 40px; 
-  height: 40px; 
-  background-image: url('../assets/twitter.png'); /* set the image as the background */
-  background-size: cover; /* scale the image to cover the entire icon */
-  background-position: center; /* center the image within the icon */
-  border-radius: 50%; /* make the icon circular */
-
-}
-.footer-basic .social .icon-ion-social-facebook{
-  
-  display: inline-block;
-  width: 40px; 
-  height: 40px; 
-  background-image: url('../assets/fb.png'); /* set the image as the background */
-  background-size: cover; /* scale the image to cover the entire icon */
-  background-position: center; /* center the image within the icon */
-  border-radius: 50%; /* make the icon circular */
-
-}
-
-.footer-basic .list-inline{
-  color: #fff;
-}
-
-#ft :hover{
-  color : #F8B333;
-}
-
 </style>

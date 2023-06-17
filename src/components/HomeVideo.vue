@@ -1,48 +1,23 @@
 <script setup></script>
 <template>
-
-
   <video autoplay muted loop id="bgVideo">
-
-    <source src="../assets/bg_video.mp4" type="video/mp4" />
+    <!-- <source src="../assets/test.mp4" type="video/mp4" /> -->
+    <!-- <source src="../assets/test_dining.mp4" type="video/mp4" /> -->
+    <!-- <source src="../assets/people.mp4" type="video/mp4" /> -->
+    <!-- <source src="../assets/high_dining.mp4" type="video/mp4" /> -->
     <!-- <source src="../assets/dining.mp4" type="video/mp4" /> -->
-    
+    <!-- <source src="../assets/dev.mp4" type="video/mp4" /> -->
+    <source src="../assets/bg_video.mp4" type="video/mp4" />
     Your browser does not support HTML5 video.
   </video>
-
-
-  <!-- written by dev for background image -->
-
-  <!-- <div class="bg-image">
-    <p>
-      
-
-    </p>
-  </div> -->
-
-  
 </template>
 <style scoped>
-
-/* written by dev for background image  */
-/* 
-.bg-image{
-  height: 100vh;
-  width: 100%;
-  background-image: url('../assets/bg.png');
-  background-size: cover;
-  padding: 20px;
-} */
-
-
-  
-
 video {
   height: 100vh;
   width: 100%;
-  object-fit: cover;
-  filter : contrast(300%);
-  filter : blur(8px);
+  object-fit: fill;
+  filter: contrast(300%);
+  filter: blur(8px);
   animation: 1.2s ease-out 0s 1 slideUp;
 }
 
